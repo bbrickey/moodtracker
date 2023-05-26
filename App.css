@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}

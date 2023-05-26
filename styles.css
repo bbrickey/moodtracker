@@ -1,0 +1,189 @@
+/* https://colorhunt.co/palette/b2a4ffffb4b4ffdeb4fdf7c3 */
+
+body {
+  background-color: black;
+  color: #b1a3ff;
+  /*border: 3px solid black;*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header {
+  background-color: rgb(33, 28, 40);
+  padding-left: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signature {
+  font-size: 1rem;
+  color: #fdf7c3e0;
+  margin-right: 50px;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  padding: 10px;
+}
+.signature a {
+  text-decoration: none;
+  color: #fdf7c3e0;
+}
+
+.primary {
+  width: 30%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: #fdf7c3;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.description {
+  padding: 5%;
+  padding-bottom: 3%;
+  color: #fdf7c3;
+  font-size: 1.2rem;
+}
+
+.form {
+  padding-left: 20px;
+  border: 2px solid #b1a3ff;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  transform: scale(80%);
+}
+
+.formItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /*border: 2px solid blue;*/
+  gap: 2rem;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+}
+
+.pushButton {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.alert {
+  width: 30%;
+  background-color: #ffdeb4;
+  color: black;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  padding: 0 30px 30px;
+}
+
+.alert.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.alert button {
+  width: 50%;
+  padding: 10px 0;
+  border: 0;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.resultHeader {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.results {
+  background-color: #ffdeb4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  position: fixed;
+  border-radius: 10px;
+  z-index: 10;
+  min-width: 50%;
+  max-width: 80%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.results.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.testResults {
+  display: flex;
+  justify-content: center;
+}
+
+.resultItem {
+  background-color: black;
+  font-size: 100%;
+  margin-bottom: 1%;
+  color: #fdf7c3;
+}
+
+.resultItemHeader {
+  margin: 5px;
+  text-align: center;
+  border-bottom: 2px solid #fdf7c3;
+}
+.resultList {
+  margin: 10px;
+}
+.listItem {
+  padding: 3px;
+}
+.closeButton {
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+select,
+input {
+  font: inherit;
+  background-color: #fdf7c3;
+  flex-grow: 0;
+  width: 10%;
+}
+
+button {
+  font: inherit;
+  background-color: #ffb4b4;
+  border: 3px solid #fb9696;
+}
